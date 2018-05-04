@@ -102,7 +102,6 @@ a#github {
 }
 
 .social .email-link-outer {
-  margin-top: 10px;
   display: block;
 }
 
@@ -138,5 +137,11 @@ Responsive
 @media (min-width:480px) {
   .name img {
     width: 400px;
+  }
+  .social .email-link-outer {
+    display: inline;
+  }
+  li.email-link-outer:before, li.email-link-outer:after {
+    display: inline;
   }
 }
