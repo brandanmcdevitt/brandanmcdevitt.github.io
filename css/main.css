@@ -120,14 +120,15 @@ a#github {
 }
 
 li.email-link-outer:before, li.email-link-outer:after {
-  content: "\f00d";
+  content: "\f111";
   color: #fff;
   opacity: .5;
-  font-size: 2px;
+  font-size: 3px;
   margin: 010px;
   font-family: 'Font Awesome 5 Free';
   vertical-align: middle;
-  display: none;
+  font-weight: 600;
+  /* display: none; */
 }
 
 /********
