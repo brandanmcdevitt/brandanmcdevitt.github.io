@@ -128,12 +128,21 @@ li.email-link-outer:before, li.email-link-outer:after {
   font-family: 'Font Awesome 5 Free';
   vertical-align: middle;
   font-weight: 600;
-  /* display: none; */
+  display: none;
 }
 
 /********
 Responsive
 ********/
+
+@media (min-width:375px) {
+  .social .email-link-outer {
+    display: inline-block;
+  }
+  li.email-link-outer:before, li.email-link-outer:after {
+    display: inline-block;
+  }
+}
 
 @media (min-width:480px) {
   .name img {
