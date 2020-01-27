@@ -1,0 +1,213 @@
+@font-face {
+    font-family: 'firaCode';
+      src: url('https://cdn.rawgit.com/tonsky/FiraCode/master/distr/ttf/FiraCode-Regular.ttf');
+      font-style: normal;
+      font-weight: normal;
+  } 
+
+
+  
+body {
+    background-color: #111010;
+    }
+  
+  span {
+    color: #a0a0a0;
+    padding: 0 7px 0 0
+  }
+
+  p {
+    color: #b0b8bf;
+    padding: 5px 0 0 231px;
+    background-color: #3a3f49;
+    margin: 0;
+    width: 500%;
+    position: relative;
+    left: -200px;
+    }
+  
+  .popover {
+    height: 112px;
+    width: 370px;
+    background-color: #303030;
+    border-radius: 9px;
+    border: 1px solid #444444;
+    overflow: hidden;
+  }
+  
+  .details {
+    color: #dcdcdc;
+    font-family: firaCode !important;
+    font-variant-ligatures: contextual;
+    font-size: 13px;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    padding: 2px 2px 2px 0;
+  }
+  
+  #first {
+    padding-top: 5px;
+  }
+
+  #last {
+    padding-bottom: 6px;
+  }
+  
+  li:hover {
+    background: #1e58c5;
+    cursor: pointer;
+  }
+
+  .codesense-icon {
+    height: 17px;
+    width: 17px;
+    margin-right: 85px;
+    margin-left: 5px;
+  }
+
+  .function {
+    font-family: firaCode !important;
+    font-variant-ligatures: contextual;
+    color: #b0b8bf;
+    font-size: 13px;
+    text-align: left;
+    margin: 0 0 0 60px;
+    }
+
+  .func {
+    color: #c895df;
+    padding: 0;
+  }
+
+  .func-name {
+    color: #67aec8;
+  }
+
+  .wrapper:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+    }
+
+  .wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    }
+
+    .wrapper-inner {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      z-index: 2;
+      margin-top: -4%;
+      max-width: 80%;
+      overflow: hidden;
+      border-radius: 8px;
+      }
+
+        .xcode {
+          padding: 60px 70px;
+          background: #353842;
+          border-radius: 8px;
+          border: 1px solid #444444;
+          }
+
+          #blink {
+            animation: blinker 0.45s cubic-bezier(.5, 0, 1, 1) infinite alternate;
+            color: #4b5fde;
+            position: relative;
+top: -2px;
+left: -4px;
+          }
+          @keyframes blinker { to { opacity: 0; }
+        }
+
+        .title-bar {
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          width: 100%;
+          height: 30px;
+          background-color: #222222;
+          display: flex;
+          align-items: center;
+          }
+
+          .fas.fa-circle {
+            font-size: 12px;
+            }
+
+            #close {
+              margin-left: 10px;
+              color: #ed645a;
+              }
+#min {
+  color: #e0c04c;
+}
+
+#max {
+  color: #72be46;
+}
+
+.half-content.left {
+  color: #a0a0a0;
+  width: 12%;
+  text-align: right;
+}
+
+.half-content {
+  width: 50%;
+  display: inline-block;
+}
+
+.half-content.right {
+  text-align: left;
+  padding-left: 11px;
+}
+
+.nav img {
+  height: 100px;
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  }
+
+  .nav-outer {
+    background-color: #fff;
+    width: 210px;
+    height: 70px;
+    color: #000;
+    display: flex;
+    align-items: center;
+    margin: 40px;
+    }
+
+    .nav-inner {
+      text-align: center;
+      width: 100%;
+      font-family: firaCode !important;
+    font-variant-ligatures: contextual;
+      }
+
