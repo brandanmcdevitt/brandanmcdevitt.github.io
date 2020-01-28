@@ -1,11 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,700&display=swap');
 @font-face {
     font-family: 'firaCode';
       src: url('https://cdn.rawgit.com/tonsky/FiraCode/master/distr/ttf/FiraCode-Regular.ttf');
       font-style: normal;
       font-weight: normal;
   } 
-
-
   
 body {
     background-color: #111010;
@@ -27,8 +26,7 @@ body {
     }
   
   .popover {
-    height: 112px;
-    width: 370px;
+    width: 100%;
     background-color: #303030;
     border-radius: 9px;
     border: 1px solid #444444;
@@ -119,14 +117,15 @@ body {
       margin-top: -4%;
       max-width: 80%;
       overflow: hidden;
-      border-radius: 8px;
       }
 
         .xcode {
+          position: relative;
           padding: 60px 70px;
           background: #353842;
           border-radius: 8px;
           border: 1px solid #444444;
+          overflow: hidden;
           }
 
           #blink {
@@ -211,3 +210,57 @@ left: -4px;
     font-variant-ligatures: contextual;
       }
 
+      .about {
+        color: #fff;
+        margin-bottom: 40px;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: left;
+        background-image: -webkit-gradient(linear, left top, right top, from(#ee65de), to(#26cbff));
+        image-rendering: -webkit-gradient(linear, left top, right top, from(#ee65de), to(#26cbff));
+        background-image: linear-gradient(to right, #ee65de, #26cbff);
+        background-size: 100% 1px;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        padding: 0 0 40px 0;
+        }
+
+        .under {
+          color: #fff;
+          margin-top: 40px;
+          }
+
+          .fas.fa-pizza-slice {
+            color: rgb(215, 151, 68);
+            }
+
+            .email-link {
+              color: #fff;
+font-size: 15px;
+text-decoration: none;
+font-family: "Josefin Sans", sans serif;
+font-weight: 300;
+opacity: .5;
+-webkit-transition: opacity .1s ease-in;
+background-image: -webkit-gradient(linear, left top, right top, from(#ee65de), to(#26cbff));
+        image-rendering: -webkit-gradient(linear, left top, right top, from(#ee65de), to(#26cbff));
+        background-image: linear-gradient(to right, #ee65de, #26cbff);
+        background-size: 100% 1px;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+          }
+
+          .email-link:hover {
+            opacity: 1;
+          }
+
+        /* .wrapper:after {
+          border: 1px solid;
+          border-image-source: linear-gradient(to right, #ee65de, #26cbff);
+          border-image-slice: 1;
+          content: '';
+          position: fixed;
+          top: 10px;
+          left: 10px;
+          bottom: 10px;
+          right: 10px;
+          } */
