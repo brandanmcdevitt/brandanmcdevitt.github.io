@@ -7,15 +7,26 @@
   } 
   
 body {
-    background-color: #111010;
+    background-color: #1a1a1b;
+    margin: 0;
     }
+
+    h4 {
+      margin: 0;
+      font-weight: 100;
+  }
+
+  h4:last-child {
+    color: #9f9f9f;
+    margin-top: 3px;
+}
   
   span {
     color: #a0a0a0;
     padding: 0 7px 0 0
   }
 
-  p {
+  .function p {
     color: #b0b8bf;
     padding: 5px 0 0 231px;
     background-color: #3a3f49;
@@ -60,7 +71,7 @@ body {
     padding-bottom: 6px;
   }
   
-  li:hover {
+  .details ul li:hover {
     background: #1e58c5;
     cursor: pointer;
   }
@@ -78,12 +89,15 @@ body {
     color: #b0b8bf;
     font-size: 13px;
     text-align: left;
-    margin: 0 0 0 60px;
     }
 
   .func {
     color: #c895df;
     padding: 0;
+  }
+
+  .url {
+    color: #e6cd96;
   }
 
   .func-name {
@@ -115,13 +129,13 @@ body {
       vertical-align: middle;
       z-index: 2;
       margin-top: -4%;
-      max-width: 80%;
+      max-width: 90%;
       overflow: hidden;
       }
 
         .xcode {
           position: relative;
-          padding: 60px 70px;
+          padding: 60px 30px;
           background: #353842;
           border-radius: 8px;
           border: 1px solid #444444;
@@ -154,9 +168,18 @@ left: -4px;
             font-size: 12px;
             }
 
-            #close {
+            #close, #egg {
               margin-left: 10px;
               color: #ed645a;
+              animation-timing-function: ease-in-out;
+              animation: .5s;
+              }
+
+              #egg {
+                opacity: 1;
+                position: absolute;
+                z-index: -2;
+
               }
 #min {
   color: #e0c04c;
@@ -226,8 +249,14 @@ left: -4px;
 
         .under {
           color: #fff;
-          margin-top: 40px;
-          }
+          position: absolute;
+          bottom: 0;
+          margin: 0 auto;
+          left: 0;
+          right: 0;
+          text-align: center;
+          margin-bottom: 20px;
+      }
 
           .fas.fa-pizza-slice {
             color: rgb(215, 151, 68);
@@ -253,14 +282,27 @@ background-image: -webkit-gradient(linear, left top, right top, from(#ee65de), t
             opacity: 1;
           }
 
-        /* .wrapper:after {
-          border: 1px solid;
-          border-image-source: linear-gradient(to right, #ee65de, #26cbff);
-          border-image-slice: 1;
-          content: '';
-          position: fixed;
-          top: 10px;
-          left: 10px;
-          bottom: 10px;
-          right: 10px;
-          } */
+          .details ul a {
+            text-decoration: none;
+            color: #dcdcdc;
+          }
+
+          /*****
+          Responsive
+          *****/
+
+          @media (min-width:480px) {
+            .function {
+              margin: 0 0 0 60px;
+            }
+          }
+          
+          @media (min-width:1400px) {
+            .wrapper-inner {
+              max-width: 36%;
+            }
+
+            .xcode {
+              padding: 60px 70px;
+            }
+          }

@@ -12,47 +12,88 @@
 </head>
 
 <body>
+
 <div class="wrapper">
 <div class="wrapper-inner">
 
 <div class="about">
 
-Brandan McDevitt<br/>
-iOS Developer</br>
+<h4>Brandan McDevitt<h4/>
+<h4>iOS Developer</h4>
 </div>
 
 <div class="xcode">
 <div class="title-bar">
 <span id="close"><i class="fas fa-circle"></i></span>
+<span id="egg"><i class="fab fa-apple"></i></span>
 <span id="min"><i class="fas fa-circle"></i></span>
 <span id="max"><i class="fas fa-circle"></i></span>
 </div>
 <div class="function">
-<span class="func">func</span> <span class="func-name">getDetails</span>() {
-<p>brandan.<span id="blink">|</span></p>
+<span class="func">func</span> <span class="func-name">getDetails</span>() -> <span class="url">URL</span> {
+<p><span class="func">return</span> brandan.<span id="blink">|</span></p>
 </div>
 <div class="popover">
   <div class="details">
     <ul>
-      <li id="first"><img class="codesense-icon" src="/images/variable-asset.png"><div class="half-content left">URL</div><div class="half-content right">gitHub</div></li>
-      <li><img class="codesense-icon" src="/images/variable-asset.png"><div class="half-content left">URL</div><div class="half-content right">linkedIn</div></li>
-      <li><img class="codesense-icon" src="/images/variable-asset.png"><div class="half-content left">String</div><div class="half-content right">portfolio</div></li>
-      <li id="last"><img class="codesense-icon" src="/images/variable-asset.png"><div class="half-content left">String</div><div class="half-content right">résumé</div></li>
+    <a href="https://github.com/brandanmcdevitt" target="_">
+      <li id="first">
+      <img class="codesense-icon" src="/images/variable-asset.png">
+      <div class="half-content left">URL</div>
+      <div class="half-content right">gitHub</div>
+      </li>
+    </a>
+
+    <a href="https://www.linkedin.com/in/brandanmcdevitt/" target="_">
+      <li>
+      <img class="codesense-icon" src="/images/variable-asset.png">
+      <div class="half-content left">URL</div>
+      <div class="half-content right">linkedIn</div>
+      </li>
+    </a>
+
+    <a href="https://brandan.me/portfolio">
+      <li>
+      <img class="codesense-icon" src="/images/variable-asset.png">
+      <div class="half-content left">URL</div>
+      <div class="half-content right">portfolio</div>
+      </li>
+      </a>
+
+    <a href="https://github.com/brandanmcdevitt/curriculum.vitae" target="_">
+      <li id="last">
+      <img class="codesense-icon" src="/images/variable-asset.png">
+      <div class="half-content left">URL?</div>
+      <div class="half-content right">résumé</div>
+      </li>
+    </a>
     </ul>
   </div>
 </div>
 </div>
 
+</div>
+</div>
+
 <div class="under">
-<!--<i class="fab fa-apple"></i>-->
-<!--<i class="fas fa-pizza-slice"></i><br/>-->
 <a class="email-link" target="_blank" href="mailto:hello@brandan.me">hello@brandan.me</a>
 </div>
 
+<script>
+function showApple() {
+  var closeButton = document.getElementById("close");
+  var easterEgg = document.getElementById('egg');
 
-</div>
-</div>
-  
+  closeButton.style.opacity = "0";
+  closeButton.style.position = "absolute";
+  closeButton.style.zIndex = "-2";
+  easterEgg.style.opacity = "1";
+  easterEgg.style.position = "initial";
+  easterEgg.style.zIndex = "2";
+}
+
+document.getElementById("close").onclick = function() { showApple(); }
+</script>
 </body>
 
 </html>
