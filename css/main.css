@@ -332,11 +332,11 @@ background-image: -webkit-gradient(linear, left top, right top, from(#ee65de), t
         }
 
           .slider img {
-            width: 35%;
+            width: 95%;
         }
 
         .project-description {
-          max-width: 50%;
+          max-width: 90%;
           margin: 0 auto;
           padding-bottom: 60px;
           text-align: center;
@@ -391,11 +391,11 @@ font-size: 14px;
 }
 
 .project.three img {
-  width: 56%;
+  width: 95%;
 }
 
 .project.four img {
-  width: 66%;
+  width: 95%;
 }
 
 .project {
@@ -440,6 +440,22 @@ font-size: 14px;
 
             .xcode {
               padding: 60px 70px;
+            }
+
+            .slider img {
+              width: 35%;
+            }
+  
+            .project.three img {
+              width: 56%;
+            }
+  
+            .project.four img {
+              width: 66%
+            }
+  
+            .project-description {
+              max-width: 50%;
             }
           }
 
