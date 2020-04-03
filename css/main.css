@@ -103,11 +103,8 @@ body {
 
   .func-name {
     color: #67aec8;
+    padding: inherit;
   }
-
-  span.func-name {
-    padding: none;
-}
 
   .wrapper:before {
     content: '';
