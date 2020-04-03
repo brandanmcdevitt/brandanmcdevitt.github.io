@@ -103,6 +103,7 @@ body {
 
   .func-name {
     color: #67aec8;
+    padding: none;
   }
 
   .wrapper:before {
