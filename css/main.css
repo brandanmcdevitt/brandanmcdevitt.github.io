@@ -467,6 +467,16 @@ Responsive
   }
 }
 
+@media (min-width:720px) {
+  .function {
+    margin: 0 0 0 60px;
+  }
+
+  #egg {
+    padding-top: 2px;
+  }
+}
+
 @media (min-width:1400px) {
   .wrapper-inner {
     max-width: 36%;
@@ -490,9 +500,5 @@ Responsive
 
   .project-description {
     max-width: 50%;
-  }
-
-  #egg {
-    padding-top: 2px;
   }
 }
