@@ -26,7 +26,8 @@
 <div class="xcode">
 <div class="title-bar">
 <span id="close"><i class="fas fa-circle"></i></span>
-<span id="egg"><i class="fab fa-apple"></i></span>
+<span id="egg"><a href="bitcoin.pdf"><i class="fa-solid fa-bitcoin-sign"></i></a></span>
+<!-- <span id="egg"><i class="fab fa-apple"></i></span> -->
 <span id="min"><i class="fas fa-circle"></i></span>
 <span id="max"><i class="fas fa-circle"></i></span>
 </div>
@@ -136,7 +137,7 @@ $('.portfolio, .x').click(function() {
   $('.slider').toggleClass('close');
 });
 
-function showApple() {
+function satoshiEgg() {
   var closeButton = document.getElementById("close");
   var easterEgg = document.getElementById('egg');
 
@@ -148,7 +149,7 @@ function showApple() {
   easterEgg.style.zIndex = "2";
 }
 
-document.getElementById("close").onclick = function() { showApple(); }
+document.getElementById("close").onclick = function() { satoshiEgg(); }
 </script>
 </body>
 

@@ -7,6 +7,11 @@ body {
   margin: 0;
 }
 
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 h4 {
   margin: 0;
   font-weight: 100;
@@ -180,10 +185,13 @@ li {
 }
 
 #egg {
-  opacity: 1;
+  padding-top: 2px;
+  margin-left: 13px;
+  opacity: 0;
   position: absolute;
   z-index: -2;
-
+  font-size: 14px;
+  color: #f2a900;
 }
 
 #min {
