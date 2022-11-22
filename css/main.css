@@ -106,6 +106,7 @@ li {
 
 .url {
   color: #e6cd96;
+  padding: 0;
 }
 
 .func-name {
@@ -467,7 +468,17 @@ Responsive
   }
 }
 
-@media (min-width:1400px) {
+@media (min-width:800px) {
+  .function {
+    margin: 0 0 0 60px;
+  }
+
+  .xcode {
+    padding: 60px 50px;
+  }
+}
+
+@media (min-width:1200px) {
   .wrapper-inner {
     max-width: 36%;
   }
