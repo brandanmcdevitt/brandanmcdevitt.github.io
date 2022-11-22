@@ -476,6 +476,14 @@ Responsive
   .xcode {
     padding: 60px 50px;
   }
+
+  .project.one img {
+    width: 46%;
+  }
+
+  .project.two img {
+    width: 46%;
+  }
 }
 
 @media (min-width:1200px) {
