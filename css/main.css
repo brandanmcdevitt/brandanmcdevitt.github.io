@@ -150,6 +150,7 @@ li {
   border-radius: 8px;
   border: 1px solid #444444;
   overflow: hidden;
+  z-index: 1;
 }
 
 #blink {
@@ -176,6 +177,7 @@ li {
   background-color: #222222;
   display: flex;
   align-items: center;
+  z-index: 10;
 }
 
 .fas.fa-circle {
@@ -451,6 +453,56 @@ li {
 }
 
 /*****
+Satoshi
+*****/
+
+.satoshi {
+  width: 100%;
+  height: 100%;
+  background:#353842;
+  display: table;
+  margin: auto 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  font-family: 'Fira Code', monospace;
+  font-variant-ligatures: contextual;
+  color: #b0b8bf;
+  font-size: 13px;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition:all 1s;
+  }
+
+.satoshi.hide {
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition:all 1s; /* tweak transition time */
+}
+
+.fa-brands.fa-bitcoin {
+  color: #f2a900;
+  font-size: 30px;
+}
+
+.satoshi p {
+  font-size: 11px;
+  padding: 0 10px;
+  }
+
+.satoshi a {
+  display: inline-block;
+  padding-top: 10px;
+}
+
+/*****
 Responsive
 *****/
 
@@ -484,6 +536,10 @@ Responsive
   .project.two img {
     width: 46%;
   }
+
+  .satoshi p {
+    padding: 0 30px;
+    }
 }
 
 @media (min-width:1200px) {

@@ -24,9 +24,14 @@
 </div>
 
 <div class="xcode">
+  <div class="satoshi hide">
+    <a href="/bitcoin.pdf"><i class="fa-brands fa-bitcoin"></i></a>
+    <p>It's very attractive to the libertarian viewpoint if we can explain it properly.
+      I'm better with code than with words though.</p>
+      <p><i>-Satoshi Nakamoto</i></p>
+  </div>
 <div class="title-bar">
-<span id="close"><i class="fas fa-circle"></i></span>
-<span id="egg"><a href="bitcoin.pdf"><i class="fa-solid fa-bitcoin-sign"></i></a></span>
+<span id="close"><i class="fas fa-circle close-egg"></i></span>
 <span id="min"><i class="fas fa-circle"></i></span>
 <span id="max"><i class="fas fa-circle"></i></span>
 </div>
@@ -136,19 +141,9 @@ $('.portfolio, .x').click(function() {
   $('.slider').toggleClass('close');
 });
 
-function satoshiEgg() {
-  var closeButton = document.getElementById("close");
-  var easterEgg = document.getElementById('egg');
-
-  closeButton.style.opacity = "0";
-  closeButton.style.position = "absolute";
-  closeButton.style.zIndex = "-2";
-  easterEgg.style.opacity = "1";
-  easterEgg.style.position = "initial";
-  easterEgg.style.zIndex = "2";
-}
-
-document.getElementById("close").onclick = function() { satoshiEgg(); }
+$('.close-egg').click(function() {
+  $('.satoshi').toggleClass('hide');
+});
 </script>
 </body>
 
