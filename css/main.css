@@ -190,6 +190,7 @@ li {
   color: #ed645a;
   animation-timing-function: ease-in-out;
   animation: .5s;
+  transition: .25s;
 }
 
 #egg {
@@ -204,10 +205,24 @@ li {
 
 #min {
   color: #e0c04c;
+  transition: .25s;
 }
 
 #max {
   color: #72be46;
+  transition: .25s;
+}
+
+#close:hover {
+  color: #a3453e;
+}
+
+#min:hover {
+  color: #9d8738;
+}
+
+#max:hover {
+  color: #49792d;
 }
 
 .half-content.left {
@@ -277,10 +292,6 @@ li {
   right: 0;
   text-align: center;
   margin-bottom: 20px;
-}
-
-.fas.fa-pizza-slice {
-  color: rgb(215, 151, 68);
 }
 
 .email-link {
@@ -457,8 +468,6 @@ Satoshi
 *****/
 
 .satoshi {
-  width: 100%;
-  height: 100%;
   background:#353842;
   display: table;
   margin: auto 0;
@@ -493,7 +502,7 @@ Satoshi
 }
 
 .satoshi p {
-  font-size: 11px;
+  font-size: 12px;
   padding: 0 10px;
   -webkit-text-size-adjust: 100%;
   }
@@ -501,6 +510,10 @@ Satoshi
 .satoshi a {
   display: inline-block;
   padding-top: 10px;
+}
+
+.satoshi p:nth-child(3) {
+  font-size: 11px;
 }
 
 /*****
