@@ -499,6 +499,11 @@ Satoshi
 .fa-brands.fa-bitcoin {
   color: #f2a900;
   font-size: 30px;
+  transition: .25s;
+}
+
+.fa-brands.fa-bitcoin:hover {
+  opacity: .65;
 }
 
 .satoshi p {
