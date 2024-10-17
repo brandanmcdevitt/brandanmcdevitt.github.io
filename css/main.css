@@ -34,7 +34,7 @@ span {
 
 .function p {
   color: #b0b8bf;
-  padding: 5px 0 0 231px;
+  padding: 2px 0 0 231px;
   background-color: #3a3f49;
   margin: 0;
   width: 500%;
@@ -43,12 +43,46 @@ span {
   font-size: 13px;
 }
 
-.popover {
-  width: 100%;
+#codesense-additional {
+  color: #b0b8bf;
+  font-family: 'Fira Code', monospace;
+  font-variant-ligatures: contextual;
+  font-size: 13px;
+  overflow: hidden;
+  background-color: #323232;
+  border: 1px solid #444444;
+  text-align: left;
+  padding-top: 5px;
+  display: none;
+}
+
+.codesense-additional span {
+  margin: 5px 0 0 10px;
+}
+
+#codesense-var-name {
+  color: #67aec8;
+  padding: 0;
+  padding-left: 10px;
+}
+
+#codesense-type {
+  color: #e6cd96;
+}
+
+#codesense-documentation {
+  color: #fff;
+  font-size: 11px;
+  margin: 5px 5px 5px 10px;
+}
+
+#popover {
+  width: 85%;
   background-color: #303030;
   border-radius: 9px;
   border: 1px solid #444444;
   overflow: hidden;
+  margin: auto auto 50px auto;
 }
 
 .details {
@@ -87,7 +121,7 @@ li {
 .codesense-icon {
   height: 17px;
   width: 17px;
-  margin-right: 85px;
+  /* margin-right: 85px; */
   margin-left: 5px;
 }
 
@@ -485,6 +519,7 @@ Satoshi
   -moz-transition: all 1s;
   -o-transition: all 1s;
   transition:all 1s;
+  padding: 40px 0;
   }
 
 .satoshi.hide {
@@ -531,7 +566,7 @@ Responsive
   }
 
   #blink {
-    font-size: 15px;
+    font-size: 13px;
   }
 
   #egg {
@@ -567,7 +602,7 @@ Responsive
   }
 
   .xcode {
-    padding: 60px 70px;
+    padding: 60px 70px 40px 70px;
   }
 
   .slider img {

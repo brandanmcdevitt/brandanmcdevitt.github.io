@@ -38,28 +38,25 @@
 <span class="func">var</span> <span class="func-name">details</span>: <span class="url">URL</span> = {
 <p><span class="func">return</span> Brandan.<span id="blink">|</span></p>
 </div>
-<div class="popover">
+<div id="popover">
   <div class="details">
     <ul>
-    <a href="https://github.com/brandanmcdevitt" target="_">
+    <a href="https://github.com/brandanmcdevitt" target="_" onmouseover="gitHubDocumentation()" onmouseleave="hideCodesenseDocumentation()">
       <li id="first">
       <img class="codesense-icon" src="/images/variable-asset.png">
-      <div class="half-content left">URL</div>
       <div class="half-content right">gitHub</div>
       </li>
     </a>
 
-    <a href="https://www.linkedin.com/in/brandanmcdevitt/" target="_">
+    <a href="https://www.linkedin.com/in/brandanmcdevitt/" target="_" onmouseover="linkedInDocumentation()" onmouseleave="hideCodesenseDocumentation()">
       <li>
       <img class="codesense-icon" src="/images/variable-asset.png">
-      <div class="half-content left">URL</div>
       <div class="half-content right">linkedIn</div>
       </li>
     </a>
 
-      <li class="portfolio last">
+      <li class="portfolio last" onmouseover="portfolioDocumentation()" onmouseleave="hideCodesenseDocumentation()">
       <img class="codesense-icon" src="/images/variable-asset.png">
-      <div class="half-content left">URL</div>
       <div class="half-content right">portfolio</div>
       </li>
 
@@ -71,6 +68,10 @@
       </li>
     </a> -->
     </ul>
+  </div>
+  <div id="codesense-additional">
+    <span id="codesense-var-name"></span>: <span id="codesense-type">URL</span>
+    <p id="codesense-documentation"></p>
   </div>
 </div>
 </div>
@@ -143,6 +144,31 @@ $('.portfolio, .x').click(function() {
 $('.close-egg').click(function() {
   $('.satoshi').toggleClass('hide');
 });
+
+function gitHubDocumentation() {
+  showCodesenseDocumentation("gitHub", "Returns the GitHub URL");
+}
+
+function linkedInDocumentation() {
+  showCodesenseDocumentation("linkedIn", "Returns the LinkedIn URL");
+}
+
+function portfolioDocumentation() {
+  showCodesenseDocumentation("portfolio", "Returns the Portfolio URL");
+}
+
+function showCodesenseDocumentation(varName, documentation) {
+  document.getElementById('codesense-var-name').innerText = varName;
+  document.getElementById('codesense-documentation').innerText = documentation;
+  document.getElementById('codesense-additional').style.display = "block";
+  document.getElementById('popover').style.margin = "auto";
+}
+
+function hideCodesenseDocumentation() {
+  document.getElementById('codesense-additional').style.display = "none";
+  document.getElementById('popover').style.margin = "auto auto 50px auto";
+}
+
 </script>
 </body>
 
