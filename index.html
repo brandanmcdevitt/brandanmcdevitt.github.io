@@ -137,6 +137,8 @@ Pokémon can be favourited and themes can be set.</p>
 
 <script>
 
+let showDocumentation = false;
+
 $('.portfolio, .x').click(function() {
   $('.slider').toggleClass('close');
 });
@@ -158,16 +160,28 @@ function portfolioDocumentation() {
 }
 
 function showCodesenseDocumentation(varName, documentation) {
-  document.getElementById('codesense-var-name').innerText = varName;
-  document.getElementById('codesense-documentation').innerText = documentation;
-  document.getElementById('codesense-additional').style.display = "block";
-  document.getElementById('popover').style.margin = "auto";
+  if (showDocumentation) {
+    document.getElementById('codesense-var-name').innerText = varName;
+    document.getElementById('codesense-documentation').innerText = documentation;
+    document.getElementById('codesense-additional').style.display = "block";
+    document.getElementById('popover').style.margin = "auto";
+  }
 }
 
 function hideCodesenseDocumentation() {
   document.getElementById('codesense-additional').style.display = "none";
   document.getElementById('popover').style.margin = "auto auto 50px auto";
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+  
+  if (isMobile) {
+    showDocumentation = false;
+  } else {
+    showDocumentation = true;
+  }
+});
 
 </script>
 </body>
